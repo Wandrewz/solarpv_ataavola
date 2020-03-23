@@ -29,6 +29,9 @@ header {
 #register {
     text-align: center;
 }
+#portal {
+    text-align: center;
+}
 main > div {
     padding: 20px;
 }
