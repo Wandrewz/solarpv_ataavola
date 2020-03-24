@@ -1,13 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 
 <head>
     <title>Login - solarPV</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'solarpv/styles.css' %}">
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="img/happy-sun.svg" alt="Happy Sun" id="sun"></a>
+        <a href="{% url 'index' %}"><img src="{% static 'solarpv/img/happy-sun.svg' %}" alt="Happy Sun" id="sun"></a>
         <div id="logo">
             <h1>solarPV</h1>
             <h2>Research & Development</h2>

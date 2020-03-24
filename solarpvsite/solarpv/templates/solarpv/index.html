@@ -1,13 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 
 <head>
     <title>solarPV - Research & Development</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'solarpv/styles.css' %}">
 </head>
 
 <body>
     <header>
-        <img src="img/happy-sun.svg" alt="Happy Sun" id="sun">
+        <img src="{% static 'solarpv/img/happy-sun.svg' %}" alt="Happy Sun" id="sun">
         <div id="logo">
             <h1>solarPV</h1>
             <h2>Research & Development</h2>
@@ -32,8 +33,8 @@
     <main id="home">
         <div id="left">
             <nav id="login">
-                <a href="register.html" class="button">Register</a>
-                <a href="login.html" class="button">Login</a>
+                <a href="{% url 'register' %}" class="button">Register</a>
+                <a href="{% url 'login' %}" class="button">Login</a>
             </nav>
             <h4>PV Module</h4>
             <ul>
