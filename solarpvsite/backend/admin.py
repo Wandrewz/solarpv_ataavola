@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import *
+from .models import Certificate, Client, Location, Performancedata, Product, Service, Testsequence, Teststandard, User
 
 admin.site.register(Certificate)
 admin.site.register(Client)
