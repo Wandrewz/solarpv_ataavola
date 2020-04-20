@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'solarpv',
         'HOST': 'localhost',
         'USER': 'drew',
-        'PASSWORD': 'adtswi1017'
+        'PASSWORD': '********'
     }
 }
 
