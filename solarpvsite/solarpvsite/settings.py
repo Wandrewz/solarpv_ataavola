@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'solarpv',
     'backend',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,7 +84,7 @@ DATABASES = {
         'NAME': 'solarpv',
         'HOST': 'localhost',
         'USER': 'drew',
-        'PASSWORD': 'adtswi1017'
+        'PASSWORD': '********'
     }
 }
 
