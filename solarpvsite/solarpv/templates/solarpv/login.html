@@ -32,9 +32,11 @@
     <hr>
     <main id="login">
         <h2>Login</h2>
-        <form action="/action_page.php" method="GET">
-            Username: <input type="text" name="username" maxlength="8" required><br>
-            Password: <input type="password" name="password" required><br>
+        <form action="{% url 'login' %}" method="POST">
+            <!--Username: <input type="text" name="username" maxlength="8" required><br>
+            Password: <input type="password" name="password" required><br>-->
+            {% csrf_token %}
+            {{ form }}
             <input type="submit" value="Login" class="button">
         </form>
     </main>

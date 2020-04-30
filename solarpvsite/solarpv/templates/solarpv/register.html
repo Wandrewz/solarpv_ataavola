@@ -32,20 +32,20 @@
     <hr>
     <main id="register">
         <h2>Register</h2>
-        <form action="/action_page.php" method="GET">
-            Username: <input type="text" name="username" maxlength="8" required><br>
+        <form action="/register/" method="POST">
+            <!--Username: <input type="text" name="userid" maxlength="8" required><br>
             Client ID: <input type="text" name="clientid" maxlength="6" required><br>
-            First Name: <input type="text" name="fname" required><br>
-            Middle Name (optional): <input type="text" name="mname"><br>
-            Last Name: <input type="text" name="lname" required><br>
-            Job Title: <input type="text" name="job" required><br>
-            Email: <input type="email" name="email" required><br>
-            Office Phone Number: <input type="number" name="phone" maxlength="10" required><br>
-            Cell Phone Number: <input type="number" name="phone" maxlength="10" required><br>
-            Prefix (Mr., Dr., etc.): <input type="text" name="prefix" required><br>
-            Are you staff? <input type="radio" name="isstaff" value="yes"> Yes
-            <input type="radio" name="isstaff" value="no"> No<br>
-            <input type="submit" value="Register" class="button">
+            First Name: <input type="text" name="firstname" required><br>
+            Middle Name: <input type="text" name="middlename"><br>
+            Last Name: <input type="text" name="lastname" required><br>
+            Job Title: <input type="text" name="jobtitle"><br>
+            Email: <input type="email" name="email"><br>
+            Office Phone Number: <input type="number" name="officephone" maxlength="10"><br>
+            Cell Phone Number: <input type="number" name="cellphone" maxlength="10"><br>
+            Prefix (Mr., Dr., etc.): <input type="text" name="prefix" required><br>-->
+            {% csrf_token %}
+            {{ form }}
+            <br><input type="submit" value="Register" class="button">
         </form>
     </main>
     <hr>
