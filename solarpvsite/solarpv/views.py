@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login
+
 
 def index(request):
     return render(request, 'solarpv/index.html')
+
 
 def loginview(request):
     if request.method == 'POST':
@@ -19,8 +21,10 @@ def loginview(request):
         form = AuthenticationForm()
     return render(request, 'solarpv/login.html', {'form': form})
 
+
 def portal(request):
     return render(request, 'solarpv/portal.html')
+
 
 def register(request):
     if request.method == 'POST':
@@ -32,6 +36,7 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'solarpv/register.html', {'form': form})
+
 
 def certification(request):
     return render(request, 'solarpv/certification.html')
