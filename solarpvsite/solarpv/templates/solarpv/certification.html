@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Register - solarPV</title>
+    <title>Certification - solarPV</title>
     <link rel="stylesheet" href="{% static 'solarpv/styles.css' %}">
 </head>
 
@@ -30,22 +30,11 @@
         <a href="cybersecurity.html">Cybersecurity</a>
     </nav>
     <hr>
-    <main id="register">
-        <h2>Register</h2>
-        <form action="/register/" method="POST">
-            <!--Username: <input type="text" name="userid" maxlength="8" required><br>
-            Client ID: <input type="text" name="clientid" maxlength="6" required><br>
-            First Name: <input type="text" name="firstname" required><br>
-            Middle Name: <input type="text" name="middlename"><br>
-            Last Name: <input type="text" name="lastname" required><br>
-            Job Title: <input type="text" name="jobtitle"><br>
-            Email: <input type="email" name="email"><br>
-            Office Phone Number: <input type="number" name="officephone" maxlength="10"><br>
-            Cell Phone Number: <input type="number" name="cellphone" maxlength="10"><br>
-            Prefix (Mr., Dr., etc.): <input type="text" name="prefix" required><br>-->
-            {% csrf_token %}
-            {{ form }}
-            <br><input type="submit" value="Register" class="button">
+    <main id="certification">
+        <h2>Search Certificates</h2>
+        <form action="{% url 'certification' %}" method="get">
+            <input type="text" name="certsearch" placeholder="Search Certificates">
+            <button type="submit">Search</button>
         </form>
     </main>
     <hr>
